@@ -1,6 +1,7 @@
 import 'package:fluter_to_do_app/components/task_tile.dart';
 import 'package:fluter_to_do_app/pages/add_task_dialog.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,6 +18,8 @@ class Task {
 }
 
 class _HomePageState extends State<HomePage> {
+  final _taskBox = Hive.openBox("taskBox");
+
   final _controller = TextEditingController();
 
   List<Task> TaskList = [
