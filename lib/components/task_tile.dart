@@ -31,7 +31,7 @@ class TaskTile extends StatelessWidget {
             SlidableAction(
               onPressed: deleteTask,
               icon: Icons.delete_forever_rounded,
-              backgroundColor: Colors.red.shade300,
+              backgroundColor: Colors.red.shade400,
               borderRadius: BorderRadius.circular(borderRadius),
             )
           ],
