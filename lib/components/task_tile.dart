@@ -33,7 +33,7 @@ class TaskTile extends StatelessWidget {
               icon: Icons.delete_forever_rounded,
               backgroundColor: Colors.red.shade400,
               borderRadius: BorderRadius.circular(borderRadius),
-            )
+            ),
           ],
         ),
         child: Container(
